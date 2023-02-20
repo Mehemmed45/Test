@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: burlywood;
+}
+header{
+    background-color: #344149;
+    color: white;
+    height: 400px;
+}
+.nav-bar{
+    width: 100%;
+    height: 80px;
+    border-bottom:2px solid orangered;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    padding: 0 15px;
+}
+.logo span{
+    color: orangered;
+}
+.nav-links{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding:10px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.blur-image{
+    width: 100%;
+    height: 320px;
+    background-image: url(../image/photo-cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.blur-image h2, p{
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sec-box1{
+    width: 100%;
+    height: 60px;
+    background-color: #344149;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.subs-box{
+    padding: 0 10px;
+}
+.subs-box h3{
+    font-size: 15px;
+    margin-left: 20px;
+}
+.input-box1{
+    padding-left: 60%;
+}
+.input-box2 input{
+    background-color: orangered;
+    border: 1px solid black;
+}
+
+
+.sec-box2{
+    width: 100%;
+    height: 100px;
+    background: white;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.sec-box2 img{
+    width: 160px;
+    height: 160px;
+    background: transparent;
+}
+
+.boxes{
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxes h4{
+    margin-top: 20px;
+}
+.boxes p{
+    font-size: 15px;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: orangered;
+    text-align: center;
+}
+
+@media screen and (max-width: 780px){
+    .nav-bar{
+        width: 30%;
+        font-size: 10px;
+    }
+    header{
+        height: 300px;
+    }
+    .blur-image{
+        width: 100%;
+        height: 200px;
+        font-size: 10px;
+    }
+    .sec-box1{
+        width: 150px;
+        font-size: 10px;
+    }
+    .sec-box1 h3{
+        font-size: 10px;
+    }
+    
+}
